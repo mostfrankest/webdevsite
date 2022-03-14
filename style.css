@@ -1,0 +1,86 @@
+:root{
+    --color-accent:hsl(180, 40%, 77%);
+    --color-primary: hsl(19 43% 53%);
+    --color-primary-light:hsl(40, 43%, 80%);
+    --color-primary-dark:hsl(19, 43%, 20%);
+    --color-text-dark:hsl(88, 0%, 40%);
+    --color-text-light:hsl(88, 0%, 95%);
+    
+}
+.features{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* outline: solid red; */
+    display: flex;
+    gap: 5rem;
+    justify-content: space-evenly;
+    /* margin:5rem 0; */
+    flex-wrap: wrap;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+li{
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.feature-card{
+    position: relative;
+    width: 20rem;
+    min-width: 15rem;
+    flex-wrap: wrap;
+    overflow: hidden; /* to let the border radius to apply on the image */
+    border-radius: 10px;
+    /* outline: indigo 2px solid; */
+    box-shadow: #0000005e 1px 2px 20px -6px;
+
+}
+a.btn.card-btn {
+color: var(--color-text-dark);
+text-decoration: none;
+outline: solid 1px var(--color-text-dark);
+padding: 0.5rem 1rem;
+align-self: flex-end;
+margin-top: 1rem;
+font-size: 0.7rem;
+font-weight: 800;
+border-radius: 3px;
+/* background-color: var(--color-primary-light); */
+}
+ul{
+padding-left: 0;
+margin: 0;
+}
+h2{
+    width: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    /* text-align: center; */
+    padding: 0.5rem 1rem;
+    /* margin-top: -15px; */
+    margin: auto ;
+    position: absolute;
+    /* line-height: 0.2; */
+    /* top: -4%; */
+    /* outline: solid var(--color-primary-light) 2px; */
+    
+    /* if you use a negative margin, the heading background will slide under the feature image */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+.feature-body{
+    padding: 2rem;
+    color: var(--color-text-dark);
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--color-text-light); */
+}
