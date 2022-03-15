@@ -1,7 +1,7 @@
 
 //TEST CODE
 *{
-    outline: solid red 1px !important;
+    // outline: solid red 1px !important;
 }
 // CSS VARIABLES
 :root {
@@ -27,7 +27,7 @@ $color-text-light: var(--color-text-light);
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 5rem;
+  gap: min(1rem, 5rem);
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -108,12 +108,14 @@ header {
 
 nav ul{
     display: flex;
-    gap: 50px;
+    gap: 2rem;
     li{
         list-style: none;
     }
     a{
         color: initial;
         text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 }
