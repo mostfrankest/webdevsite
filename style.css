@@ -1,3 +1,7 @@
+* {
+  outline: solid red 1px !important;
+}
+
 :root {
   --color-accent: hsl(180, 0%, 77%);
   --color-primary: hsl(19 0% 53%);
@@ -112,6 +116,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

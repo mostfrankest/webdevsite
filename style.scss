@@ -1,7 +1,7 @@
 
 //TEST CODE
 *{
-    // outline: solid red 1px !important;
+    outline: solid red 1px !important;
 }
 // CSS VARIABLES
 :root {
@@ -102,6 +102,7 @@ a.btn.card-btn {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 3rem;
 }
