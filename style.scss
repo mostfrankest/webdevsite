@@ -1,9 +1,14 @@
+
+//TEST CODE
+*{
+    outline: solid red 1px !important;
+}
 // CSS VARIABLES
 :root {
-    --color-accent: hsl(180, 40%, 77%);
-    --color-primary: hsl(19 43% 53%);
-    --color-primary-light: hsl(40, 43%, 80%);
-    --color-primary-dark: hsl(19, 43%, 20%);
+    --color-accent: hsl(180, 0%, 77%);
+    --color-primary: hsl(19 0% 53%);
+    --color-primary-light: hsl(40, 0%, 80%);
+    --color-primary-dark: hsl(19, 0%, 20%);
     --color-text-dark: hsl(88, 0%, 40%);
     --color-text-light: hsl(88, 0%, 95%);
 }
@@ -21,11 +26,9 @@ $color-text-light: var(--color-text-light);
 .features {
   max-width: 1200px;
   margin: 0 auto;
-  /* outline: solid red; */
   display: flex;
   gap: 5rem;
   justify-content: space-evenly;
-  /* margin:5rem 0; */
   flex-wrap: wrap;
 }
 
@@ -41,18 +44,22 @@ body {
   font-size: 0.8rem;
   line-height: 1.5;
 }
+.branding{
+    display: flex;
+    align-items: center;
+}
 
 a.btn.card-btn {
-    color: var(--color-text-dark);
+    color: $color-text-dark;
   text-decoration: none;
-  outline: solid 1px var(--color-text-dark);
+  outline: solid 1px $color-text-dark;
   padding: 0.5rem 1rem;
   align-self: flex-end;
   margin-top: 1rem;
   font-size: 0.7rem;
   font-weight: 800;
   border-radius: 3px;
-  /* background-color: var(--color-primary-light); */
+  /* background-color: $color-primary-light); */
 }
 .feature-list {
     padding-left: 0;
@@ -65,12 +72,11 @@ a.btn.card-btn {
   flex-wrap: wrap;
   overflow: hidden; /* to let the border radius to apply on the image */
   border-radius: 10px;
-  /* outline: indigo 2px solid; */
   box-shadow: #0000005e 1px 2px 20px -6px;
   h2 {
       width: 50%;
-      background-color: var(--color-accent);
-      color: var(--color-text-dark);
+      background-color: $color-accent;
+      color: $color-text-dark;
     font-size: 1rem;
     /* text-align: center; */
     padding: 0.5rem 1rem;
@@ -79,7 +85,7 @@ a.btn.card-btn {
     position: absolute;
     /* line-height: 0.2; */
     /* top: -4%; */
-    /* outline: solid var(--color-primary-light) 2px; */
+    /* outline: solid $color-primary-light 2px; */
     
     /* if you use a negative margin, the heading background will slide under the feature image */
     /* left: 50%; */
@@ -88,15 +94,16 @@ a.btn.card-btn {
 }
 .feature-body {
   padding: 2rem;
-  color: var(--color-text-dark);
+  color: $color-text-dark;
   display: flex;
   flex-direction: column;
-  /* background-color: var(--color-text-light); */
+  /* background-color: $color-text-light; */
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  padding: 0 3rem;
 }
 
 nav ul{
