@@ -11,6 +11,24 @@
   --color-text-light: hsl(88, 0%, 95%);
 }
 
+.hero {
+  background-color: lightgreen;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: linear-gradient(25deg, red, rgba(255, 255, 0, 0.096)), url(images/feature.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .caption {
+  color: wheat;
+}
+
 .features {
   max-width: 1200px;
   margin: 0 auto;
